@@ -16,9 +16,9 @@ public class PhoneNumberFactoryTest {
     @Test
     public void testCreatePhoneNumberSafely() {
         // : Given
-        int areaCode = 0;
-        int centralOfficeCode = 0;
-        int phoneLineCode = 0;
+        int areaCode = 302;
+        int centralOfficeCode = 571;
+        int phoneLineCode = 6548;
 
         // : When
         PhoneNumber phoneNumber = PhoneNumberFactory.createPhoneNumberSafely(areaCode, centralOfficeCode, phoneLineCode);
@@ -31,7 +31,7 @@ public class PhoneNumberFactoryTest {
     public void testGetAreaCode() {
         // : Given
         Integer areaCode = 302;
-        int centralOfficeCode = 312;
+        int centralOfficeCode = 412;
         int phoneLineCode = 5555;
 
         // : When
@@ -78,7 +78,7 @@ public class PhoneNumberFactoryTest {
             PhoneNumber phoneNumber = PhoneNumberFactory.createRandomPhoneNumber();
 
             // : Then
-            Assert.assertTrue(phoneNumber != null);
+            Assert.assertTrue(phoneNumber != null   );
         }
     }
 }
